@@ -11,7 +11,7 @@ root{
     outline: none;
     border: none;
     text-decoration: none;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     transition: all .2s linear;
     line-height: 1.5;
 }
@@ -78,10 +78,12 @@ header .logo{
     color: #fff;
     font-size: 3rem;
     font-weight: bolder;
+    cursor: default;
 }
 header .logo span{
     text-transform: uppercase;
     color: #66b3ff;
+    cursor: default;
 }
 header .navbar a{
     display: block;
@@ -385,12 +387,12 @@ tr:nth-child(even):hover{
     color: #333;
     text-transform: none;
     font-size: 1.7rem;
-    padding: 1rem 0;
+    padding: .9rem ;
     margin: 1rem 0;
 }
-.contact .row form .box:focus,
-.contact .row form textarea:focus{
-    border-color: #66b3ff;
+.contact .row form .box:hover,
+.contact .row form textarea:hover{
+    border: 1px solid #666;
 }
 .contact .row form .box::placeholder,
 .contact .row form textarea::placeholder{
@@ -401,7 +403,7 @@ tr:nth-child(even):hover{
     resize: none;
 }
 .contact .row form .btn{
-    margin-top: 0;
+    margin-top: 1.5rem;
     margin-bottom: 1.5rem; 
 }
 
@@ -412,9 +414,11 @@ footer{
     text-align: center;
     color: #666;
     background: #f2f2f2;
+    cursor: default;
 }
 footer span{
     color: #66b3ff;
+    cursor: pointer;
 }
 
 
