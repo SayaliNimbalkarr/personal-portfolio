@@ -12,7 +12,7 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 // Clone your GitLab repository (replace with your repository URL)
-                git branch: "${GIT_BRANCH}", url: 'https://gitlab.com/your_username/your_repo.git'
+                git branch: "${GIT_BRANCH}", url: 'https://github.com/SayaliNimbalkarr/personal-portfolio.git'
             }
         }
 
