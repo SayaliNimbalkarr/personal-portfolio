@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        // Replace with your SonarQube server configuration name in Jenkins
+        // SonarQube server configuration name from Jenkins
         SONARQUBE_SERVER = 'Sonarqube'  
         // Optional: Define the Git branch to build
         GIT_BRANCH = 'main'
@@ -21,7 +21,7 @@ pipeline {
                 // Run SonarQube Scanner for static code analysis
                 script {
                     withSonarQubeEnv(SONARQUBE_SERVER) {
-                        sh 'mvn sonar:sonar -Dsonar.projectKey=project-2 -Dsonar.host.url=${http://localhost:9000} -Dsonar.login=${sqp_0c421f5e4c9a64f6df0be40eb8b39340a04225cf}'
+                        sh 'mvn sonar:sonar -Dsonar.projectKey=project-2 -Dsonar.host.url=http://localhost:9000 -Dsonar.login=sqp_0c421f5e4c9a64f6df0be40eb8b39340a04225cf'
                     }
                 }
             }
